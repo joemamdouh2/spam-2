@@ -53,33 +53,20 @@ client2.on('message', message => {
 
 
 
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
+client.on('ready', async() => {
+var server = "512693975363223573"; 
+var channel = "513991573772697602";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('sdsdoasmdoamsdoamsdom')
+    },305);
+})
+client.on('ready', async() => {
+var server = "512693975363223573"; 
+var channel = "513991573772697602";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('sdsdoasmdoamsdoamsdom')
+    },305);
+})
 
 
 
